@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zandrys Detalles Manualidades y Eventos</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style>        
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+       
+        form input:valid {
+            border-color: #28a745;
+        }
+
+        form input:invalid {
+            border-color: #dc3545;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>Zandrys Detalles Manualidades y Eventos</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zandrys</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="section">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Acerca de Nosotros</h2>
+                <p style="white-space: pre;">
+
+<p style="text-align: justify;">
+    Bienvenidos a Zandrys Detalles Manualidades y Eventos, tu destino ideal para hacer de cada momento un hermoso recuerdo. Transformamos espacios con decoraciones creativas, elegantes y novedosas.
+</p>
+<p style="text-align: justify;">
+    Nuestro objetivo es inspirarte a crear ambientes únicos que reflejen tu estilo y personalidad, ayudarte a expresar tus más hermosos sentimientos, sorprender a tus seres queridos en cada ocasión con hermosos detalles, y brindarte la ayuda idónea para tus proyectos manuales.
+</p>
+
+            </div>
+            <div class="col-md-6">
+                <img src="img/img1.jpeg" class="img" alt="Imagen de ejemplo" >
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2>Nuestros Servicios</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Eventos</td>
+                    <td>Ofrecemos paquete completo de decoración.</td>
+                    <td>$400000</td>
+                </tr>
+                <tr>
+                    <td>Detalles</td>
+                    <td>Arreglos florales, anchetas, etc.</td>
+                    <td>$70000</td>
+                </tr>
+                <tr>
+                    <td>Manualidades</td>
+                    <td>Maquetas, etc.</td>
+                    <td>$50000</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button" onclick="alert('Gracias por interesarte en nuestros servicios!')">Más información</button>
+    </section>
+
+    <section id="video" class="section_v">
+        <h2>Video de Presentación</h2>
+        <div >
+            <video class="video" controls>
+                <source src="vid/vid1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+    </section>
+
+ 
+    <section id="contacto" class="section">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="POST" class="section_c">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Número de Celular</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="324000222" required>
+                <div class="form-text">Formato: 324000222</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="comentarios" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">¿Cómo prefieres ser contactado?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="emailRadio" value="email" required>
+                    <label class="form-check-label" for="emailRadio">
+                        Correo Electrónico
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="celularRadio" value="celular" required>
+                    <label class="form-check-label" for="celularRadio">
+                        Celular
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="ubicacion" class="section">
+        <h2>Ubicación</h2>
+        <p>A continuación puedes ver nuestra ubicación en Google Maps:</p>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7884.027372736614!2d-75.77107456393517!3d8.87831715670708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2bb28f68302d%3A0x58d6cf95108644f7!2sZandrys%20Pinto!5e0!3m2!1sen!2sco!4v1727317383334!5m2!1sen!2sco" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer id="contacto" class="bg-dark text-white text-center py-3 mt-5">
+        <p>Contacta con nosotros: <a href="#" class="text-white">CIPA New Chapter</a></p>
+        <p>&copy; 2024 Zandrys. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
